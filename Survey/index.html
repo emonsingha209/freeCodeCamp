@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Student Survey</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <h1 id="title">Student Survey Form</h1>
+        <p id="description">Please fill up this form with right information</p>
+    </body>
+    <form id="survey-form">
+        <fieldset>
+            <label id="name-label">Name<input id="name" name="name" type="text" placeholder="Enter Your Name" required/></label>
+            <label id="email-label">Email<input id="email" name="email" type="email" placeholder="Enter Your Email" required/></label>
+            <label id="number-label">Age(In Numeric)<input id="number" name="age" type="number" placeholder="Age" /></label>
+            <label id="dropdown-label">Department
+                <select id="dropdown" name="dropdown">
+                    <option value="">Select an option</option>
+                    <option value="1">CSE</option>
+                    <option value="2">EEE</option>
+                    <option value="3">BBA</option>
+                    <option value="4">ENGLISH</option>
+                </select>
+            </label>
+            <label id="gender-label">Gender
+                <label><input id="male" name="gender" type="radio" class="inline" />Male</label>
+                <label><input id="female" name="gender" type="radio" class="inline" />Female</label>
+            </label>
+            <label id="sports-label">Favourite Sports
+                <label id="chess-label"><input id="chess" name="chess" type="checkbox" value="chess" class="inline" />Chess</label>
+                <label id="cricket-label"><input id="cricket" name="cricket" type="checkbox" value="cricket" class="inline" />Cricket</label>
+                <label id="football-label"><input id="football" name="football" type="checkbox" value="football" class="inline" />Football</label>
+            </label>
+            <label id="bio">Provide a bio
+                <textarea id="bio" name="bio" rows="4" cols="30" placeholder="Write here..."></textarea>
+            </label>
+        </fieldset>
+        <input type="submit" value="submit" />
+    </form>
+</html>
